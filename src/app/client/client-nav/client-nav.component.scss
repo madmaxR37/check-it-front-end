@@ -1,0 +1,43 @@
+.check-it-custom-with{
+  max-width:200px;
+  max-height:30px;
+}
+.check-it-custom-container{
+  padding-top:10px;
+}
+hr {
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.custom-check-it-nav-item{
+  margin-left:auto;
+}
+@media (max-width: 991px) {
+  .check-it-amount-span{
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:bold;
+    font-size:20px;
+  }
+}
+.ch-it-navbar-custom{
+  flex-grow:0
+}
+.check-it-amount-span{
+  margin-left:auto;
+  font-weight:bold;
+  font-size:20px;
+}
+.ch-it-btn{
+  height:30px;
+  width:30px;
+  padding:0;
+  border:none;
+}
+.ch-it-profile{
+  height:40px;
+  width:40px;
+  border-radius:50%;
+}
