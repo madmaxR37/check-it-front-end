@@ -1,0 +1,115 @@
+/* Center the main card on the page */
+.card {
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 540px;
+  margin-bottom:30px
+}
+.card .ch-it-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Make the inner card's content horizontal */
+.card .card .row {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust the column widths for larger screens */
+@media (min-width: 768px) {
+  .card .card .col-md-4 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .card .card .col-md-8 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+/* Make the layout responsive for smaller screens */
+@media (max-width: 767px) {
+  .card .card .row {
+    flex-direction: column;
+  }
+
+  .card .card .col-md-4,
+  .card .card .col-md-8 {
+    width: 100%;
+  }
+
+  .card .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+li{
+  list-style: none;
+}
+.ch-it-cart-item-img{
+  height: 120px;
+  width: 120px;
+}
+.ch-it-inner-container{
+  max-width: 540px;
+  margin-right: 8%;
+  margin-top: 5%;
+}
+.ch-it-cart-item{
+  display:flex;
+  max-height:120px;
+}
+
+
+@media (max-width: 576px) {
+  .ch-it-inner-container {
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+
+  .ch-it-cart-item-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card .card .card-body {
+    padding: 1rem;
+  }
+
+  .card .card .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card .card .card-text {
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .ch-it-cart-item {
+    display: flex;
+    height: 100px;
+  }
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer span,
+.card-footer button {
+  margin: 0 10px;
+}
+.ch-it-price{
+  font-weight:bold;
+}

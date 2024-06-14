@@ -1,0 +1,160 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+.ch-it-profile{
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  margin-left: 9px;
+  margin-bottom: 8px;
+}
+::ng-deep .p-card {
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  ::ng-deep .p-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  ::ng-deep .p-card {
+    padding: 1rem;
+  }
+}
+/*----------------------------------------------------*/
+img{
+  border-radius: 3%;
+}
+.panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.central-image {
+  flex: 1;
+  max-width: 60%;
+}
+
+.central-image img {
+  width: 100%;
+  height: auto;
+}
+
+.left-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-wrapper {
+  width: 100px;
+  cursor: pointer;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .central-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .left-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-wrapper {
+    width: 60px;
+  }
+}
+/* Default styles for large screens */
+.ch-it-btn-minus,
+.ch-it-btn-plus {
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+}
+
+.ch-it-input-cart {
+  max-width: 50px;
+}
+
+.ch-it-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ch-it-add-cart-btn {
+  margin: 10px;
+  display: block;
+}
+
+/* Styles for medium screens */
+@media (max-width: 768px) {
+  .ch-it-btn-minus,
+  .ch-it-btn-plus {
+    padding: 0 5px;
+  }
+
+  .ch-it-input-cart {
+    max-width: 40px;
+  }
+
+  .ch-it-info-container {
+    flex-wrap: wrap;
+  }
+
+  .ch-it-add-cart-btn {
+    margin: 5px;
+  }
+}
+
+/* Styles for small screens */
+@media (max-width: 480px) {
+  .ch-it-btn-minus,
+  .ch-it-btn-plus {
+    padding: 0 3px;
+  }
+
+  .ch-it-input-cart {
+    max-width: 30px;
+  }
+
+  .ch-it-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ch-it-add-cart-btn {
+    margin-top: 6px;
+    margin-left: 10px;
+    display: inline;
+  }
+}
