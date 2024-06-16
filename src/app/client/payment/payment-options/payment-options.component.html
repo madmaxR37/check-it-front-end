@@ -1,0 +1,85 @@
+
+<!-- Payment by Card Modal -->
+<div class="modal fade" id="cardPaymentModal" tabindex="-1" aria-labelledby="cardPaymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cardPaymentModalLabel">Payment by Card</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="cardNumber" class="form-label">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number">
+          </div>
+          <div class="mb-3">
+            <label for="expirationDate" class="form-label">Expiration Date</label>
+            <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY">
+          </div>
+          <div class="mb-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cvv" placeholder="Enter your CVV">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Pay</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Payment Modal -->
+<div class="modal fade" id="mobilePaymentModal" tabindex="-1" aria-labelledby="mobilePaymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mobilePaymentModalLabel">Mobile Payment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="mobileNumber" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="mobileNumber" placeholder="Enter your mobile number">
+          </div>
+          <div class="mb-3">
+            <label for="paymentMethod" class="form-label">Payment Method</label>
+            <select class="form-select" id="paymentMethod">
+              <option selected>Select payment method</option>
+              <option value="mtn">MTN Mobile Money</option>
+              <option value="orange">Orange Money</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Pay</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Buttons to trigger the modals -->
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <div class="card w-100 shadow">
+    <div class="card-body">
+      <button type="button" class="btn-close float-end" aria-label="Close"></button>
+      <h4 class="card-title text-center mb-4">Choisir la méthode de paiement</h4>
+      <div class="row">
+        <div class="col-12 mb-3">
+          <button class="btn btn-primary w-100">Payer dans l'app</button>
+        </div>
+        <div class="col-12 mb-3">
+          <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#cardPaymentModal">Carte de crédit</button>
+        </div>
+        <div class="col-12 mb-3">
+          <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#mobilePaymentModal">Paiement mobile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
