@@ -1,0 +1,67 @@
+<div class="container my-5">
+  <h2 class="mb-4">Ajouter un nouvel article</h2>
+  <form>
+    <div class="row">
+      <div class="col-12 col-md-6 mb-4">
+        <div class="form-group">
+          <label for="nom">Nom <i class="pi pi-tag"></i></label>
+          <input type="text" class="form-control" id="nom" placeholder="Entrez le nom de l'article">
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="form-group">
+          <label for="prix">Prix unitaire <i class="pi pi-dollar"></i></label>
+          <input type="number" class="form-control" id="prix" placeholder="Entrez le prix unitaire">
+        </div>
+      </div>
+    </div>
+    <div class="form-group mb-4">
+      <label for="description">Description <i class="pi pi-info-circle"></i></label>
+      <textarea class="form-control" id="description" rows="3" placeholder="Entrez la description de l'article"></textarea>
+    </div>
+    <div class="form-group mb-4">
+      <label>Catégories <i class="pi pi-tags"></i></label>
+      <div class="d-flex flex-wrap">
+        <div class="form-check form-check-inline mr-3">
+          <input class="form-check-input" type="checkbox" id="categorie1" value="option1">
+          <label class="form-check-label" for="categorie1">Categorie 1</label>
+        </div>
+        <div class="form-check form-check-inline mr-3">
+          <input class="form-check-input" type="checkbox" id="categorie2" value="option2">
+          <label class="form-check-label" for="categorie2">Categorie 2</label>
+        </div>
+        <div class="form-check form-check-inline mr-3">
+          <input class="form-check-input" type="checkbox" id="categorie3" value="option3">
+          <label class="form-check-label" for="categorie3">Categorie 3</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group mb-4">
+      <label for="image">Image <i class="pi pi-image"></i></label>
+      <div class="custom-file">
+        <input style="visibility:collapse;position:absolute" type="file" class="custom-file-input" id="image" aria-describedby="imageHelp">
+        <label class="custom-file-label" for="image">
+          <i class="pi pi-plus-circle add-image-icon" style="font-size: 3rem;"></i>
+          <div class="d-block mt-2">Ajouter une image</div>
+        </label>
+      </div>
+    </div>
+    <div class="form-group mb-4">
+      <label for="stock">Nombre approximative de pièces en stock</label>
+      <select class="form-control" id="stock">
+        <option value="1">1 une pièce</option>
+        <option value="2">2 deux pièces</option>
+        <option value="3">3 trois pièces</option>
+        <option value="4">4 quatre pièces</option>
+        <option value="5">5 cinque pièces</option>
+        <option value="moins-10">Moins de 10</option>
+        <option value="10-20">Entre 10 et 20</option>
+        <option value="plus-20">Plus de 20</option>
+      </select>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button type="button" class="btn btn-secondary mr-3">Annuler</button>
+      <button type="submit" class="btn btn-primary"><i class="pi pi-plus"></i> Ajouter</button>
+    </div>
+  </form>
+</div>

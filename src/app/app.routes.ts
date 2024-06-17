@@ -52,5 +52,31 @@ export const routes: Routes = [
       }
     ]
 
+  },
+  {
+    path:'seller',
+    loadComponent:()=> import('./seller/seller.component').then(m=>m.SellerComponent),
+    children:[
+      {
+        path:'dash-board',
+        loadComponent:()=> import('./seller/dash-board/dash-board.component').then(m=>m.DashBoardComponent)
+      },
+      {
+        path:'items',
+        loadComponent:()=> import('./seller/item/item-list/item-list.component').then(m=>m.ItemListComponent)
+      },
+      {
+        path:'new-item',
+        loadComponent:()=> import('./seller/item/add-item/add-item.component').then(m=>m.AddItemComponent)
+      },
+      {
+        path:'edit-item',
+        loadComponent:()=> import('./seller/item/modify-item/modify-item.component').then(m=>m.ModifyItemComponent)
+      },
+      {
+        path:'offers',
+        loadComponent:()=> import('./seller/offer/offer.component').then(m=>m.OfferComponent)
+      }
+    ]
   }
 ];
